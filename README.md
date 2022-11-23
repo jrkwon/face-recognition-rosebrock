@@ -16,25 +16,24 @@ Make sure that this conda env is activated.
 $ conda activate face-recognition-rosebrock
 ```
 
-
 ## Install Packages
 
 ### face_recogntion
 https://anaconda.org/conda-forge/face_recognition
 ```bash
-$ conda install -c conda-forge face_recognition
+(face-recognition-rosebrock) $ conda install -c conda-forge face_recognition
 ```
 
 ### Replace `dlib` with `dlib-cuda (GPU support)`
 The `face_recognition` package inclues `dlib`. Yet, this `dlib` does not support GPU. You may compile and build `dlib` from source code to make it support GPU. I found a `conda` package from `zeroae` conda channel. We can replace the `dlib` (CPU only) with `dlib-cuda` (GPU support).
 
 ```bash
-$ conda install -c zeroae dlib-cuda 
+(face-recognition-rosebrock) $ conda install -c zeroae dlib-cuda 
 ```
 
 ### Install `imutils`
 ```bash
-$ pip install imutils
+(face-recognition-rosebrock) $ pip install imutils
 ```
 
 ## Folder Structure
